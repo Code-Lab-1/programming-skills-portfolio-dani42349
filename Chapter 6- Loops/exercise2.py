@@ -1,11 +1,14 @@
+prompt = "/nWhat is your age?"
+prompt +="/nEnter 'quit' when finished"
+
 while True:
-    age= int(input("Enter your age:"))
-    if age<3:
-        print ("It's free")
-        elseif:  age>=3 and age=12:
-        
-          print ("Ticket is 10$")
-   
-    else:
-     
-        print("Ticket is 15$")
+    age = input(prompt)
+    if age == 'quit':
+        break
+    age = int(age)
+    if age < 3:
+        print("Will get free ticket")
+    elif age < 12 :
+        print("your ticket is 12$")
+    else :
+        print("your ticket is 15$")
